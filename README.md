@@ -1,4 +1,4 @@
 prdxn-dev-framework
 ===================
 
-PRDXN's development framework for PRDXN only. (Not to be shared with Client.)
+PRDXN's "starting package" used for development.
