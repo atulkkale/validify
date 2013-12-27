@@ -3,9 +3,12 @@
 # ----------------------------------------------------------------------
 
 # Usage:
-# Expires headers tell the browser whether they should request a specific file from the server or whether they should grab it from the browser's cache.
-# It not only reduces the load of downloads from the server but rather to reduce the number of HTTP requests for the server.
-# It tells the browser how long to store a file in the cache. Using Expires Headers helps increase load times for returning visitors.
+# Expires headers tell the browser whether they should request a specific file from the server or whether they 
+# should grab it from the browser's cache.
+# It not only reduces the load of downloads from the server but rather to reduce the number of HTTP requests for 
+# the server.
+# It tells the browser how long to store a file in the cache. Using Expires Headers helps increase load times for 
+# returning visitors.
 
 ExpiresActive On
 ExpiresDefault "access plus 1 year"
@@ -37,7 +40,8 @@ ExpiresDefault "access plus 2 hours"
 # Usage: 
 # Allows web authors to choose what version of Internet Explorer the page should be rendered as.
 # Makes the IE the site is viewed on to use the latest, most modern layout engine that it has.
-# We also add chrome=1 so if Chrome Frame is installed, that site will take advantage of that and render the site like it is rendering on Chrome.
+# We also add chrome=1 so if Chrome Frame is installed, that site will take advantage of that and render the 
+# site like it is rendering on Chrome.
 
 <IfModule mod_headers.c>
     Header set X-UA-Compatible "IE=Edge,chrome=1"
