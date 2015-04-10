@@ -5,7 +5,7 @@ Repository has been created for providing PRDXN's boilerplate for Projects.
 
 ## How do I get set up? ##
 * Clone the package.
-* Checkout to branch dev-responsive for Responsive projects and dev-non-responsive for Static projects.
+* Checkout to branch dev-responsive for Responsive projects and dev-static for Static projects.
 * Remove the .git folder.
 * Initialize git for your project.
 
@@ -142,7 +142,7 @@ Your project should be up and running.
 
 * master - Initial Package.
 * dev-responsive - Package for responsive projects
-* dev-non-responsive - Package for non-responsive projects
+* dev-static - Package for static projects
 * live - initial package with .htaccess addition.
 
 ## Who do I talk to? ##
