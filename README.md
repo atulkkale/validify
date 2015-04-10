@@ -126,8 +126,8 @@ Example:
 Gulp is a task-runner.
 
 For more information and to learn gulp please click on the link provided below:
-[Gulp.js](http://gulpjs.com/)
-[Introduction to Gulp](https://www.youtube.com/watch?v=dwSLFai8ovQ)
+* [Gulp.js](http://gulpjs.com/)
+* [Introduction to Gulp](https://www.youtube.com/watch?v=dwSLFai8ovQ)
 
 ## How to use it within PRDXN Framework? ##
 * Clone the framework.
