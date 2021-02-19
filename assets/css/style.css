@@ -1,12 +1,86 @@
 @charset "utf-8";
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -16,17 +90,31 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
@@ -42,7 +130,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   border: 0;
@@ -57,9 +147,13 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
+sup {
+  top: -0.7em;
+}
 
-sub { bottom: -.25em; }
+sub {
+  bottom: -0.25em;
+}
 
 /* 1.2. Clear Fix
    ========================================================================== */
@@ -67,89 +161,108 @@ sub { bottom: -.25em; }
 .cf:before,
 .cf:after {
   display: table;
-  content: " ";
+  content: ' ';
 }
 
-.cf:after { clear: both; }
+.cf:after {
+  clear: both;
+}
 
 .futura-bold-font {
-  font-family: 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica,
+    sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 
-body{
+body {
   font-family: Helvetica, sans-serif;
 }
 
-.wrapper{
+.wrapper {
   width: 1000px;
   margin: 0 auto;
 }
 
+/* Hamburger icon starts here */
+
+.hamburger {
+  color: transparent;
+  border-top: 6px solid #170f4f;
+  border-bottom: 6px solid #170f4f;
+  border-radius: 4px;
+  height: 4px;
+  width: 27px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Hamburger icon ends here */
+
 /* Header section starts here. */
 
-header .wrapper{
+header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
 }
 
-header nav ul{
+header nav ul {
   display: flex;
   align-items: center;
   list-style: none;
 }
 
-header ul li{
+header ul li {
   margin-left: 15px;
 }
 
-.dropdown::after{
-  font-family: "Font Awesome 5 Free";
+.dropdown::after {
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  content: "\f078";
+  content: '\f078';
   color: #ccc;
   font-size: 13px;
   cursor: pointer;
   position: relative;
 }
 
-header nav ul li:first-child ul{
+header nav ul li:first-child ul {
   position: absolute;
   flex-direction: column;
   padding-top: 10px;
   display: none;
-} 
+}
 
-header nav ul li:first-child ul li{
+header nav ul li:first-child ul li {
   margin: 5px 0 0 0;
 }
 
-header nav ul li:first-child:hover ul{
-  transition: .5s;
+header nav ul li:first-child:hover ul {
+  transition: 0.5s;
   display: block;
 }
 
-header nav ul li a{
+header nav ul li a {
   text-decoration: none;
   color: #170f4f;
   text-transform: capitalize;
   font-weight: 600;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
   color: #43bcc3;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-header nav ul li:nth-child(8),header nav ul li:nth-child(7){
+header nav ul li:nth-child(8),
+header nav ul li:nth-child(7) {
   border: 1px solid #170f4f;
   padding: 7px 15px;
 }
 
-header nav ul li:nth-child(7){
+header nav ul li:nth-child(7) {
   margin-left: 55px;
 }
 
@@ -157,48 +270,49 @@ header nav ul li:nth-child(7){
 
 /* Main section starts here. */
 
-.form{
+.form {
   display: flex;
   height: 770px;
   width: 1000px;
   margin: 0 auto 100px auto;
 }
 
-.form .wrapper,.form aside .wrapper{
+.form .wrapper,
+.form aside .wrapper {
   width: auto;
 }
 
-.form .wrapper{
+.form .wrapper {
   flex: 2;
 }
 
-.form aside{
+.form aside {
   flex: 1;
   align-self: flex-end;
 }
 
-.form h1{
+.form h1 {
   font-size: 45px;
   color: #170f4f;
   font-weight: 600;
 }
 
-.form h1::first-letter{
+.form h1::first-letter {
   text-transform: uppercase;
 }
 
-.form_title p{
+.form_title p {
   color: #170f4f;
   width: 470px;
   margin-top: 20px;
   line-height: 1.5;
 }
 
-.form_title p::first-letter{
+.form_title p::first-letter {
   text-transform: uppercase;
 }
 
-.form_data{
+.form_data {
   display: block;
   width: 400px;
   outline: none;
@@ -208,21 +322,21 @@ header nav ul li:nth-child(7){
   padding: 10px 0;
 }
 
-.form_title form{
+.form_title form {
   margin-top: 80px;
   padding-left: 30px;
 }
 
-.form_title form input{
+.form_title form input {
   margin-top: 15px;
   padding-left: 10px;
 }
 
-::placeholder{
+::placeholder {
   color: #170f4f;
 }
 
-.form_error{
+.form_error {
   outline: 1px solid rgb(226, 76, 76);
   border: none;
   box-shadow: inset 1px 1px 10px rgb(255, 169, 169);
@@ -234,40 +348,40 @@ header nav ul li:nth-child(7){
   color: rgb(226, 76, 76);
 } */
 
-form .form_field span::first-letter{
+form .form_field span::first-letter {
   text-transform: uppercase;
 }
 
-.form_error_msg::after{
-  content: "Please enter proper details!";
+.form_error_msg::after {
+  content: 'Please enter proper details!';
   color: rgb(226, 76, 76);
   font-size: 12px;
 }
 
-.null_field_msg::after{
-  content: "Please fill all the fields and accept terms and conditions.";
+.null_field_msg::after {
+  content: 'Please fill all the fields and accept terms and conditions.';
   font-weight: 600;
-  color:  rgb(226, 76, 76);
+  color: rgb(226, 76, 76);
 }
 
-.success_field_msg::after{
-  content: "Form is send successfully!";
+.success_field_msg::after {
+  content: 'Form is send successfully!';
   font-weight: 600;
-  color:  #170f4f;
+  color: #170f4f;
 }
 
-.checkbox{
+.checkbox {
   display: inline-block;
 }
 
-.form_title span{
+.form_title span {
   color: #170f4f;
   font-size: 12px;
   display: inline-block;
   margin: 50px 0 10px 0;
 }
 
-.form_submit{
+.form_submit {
   display: block;
   background-color: #43bcc3;
   color: #170f4f;
@@ -278,13 +392,13 @@ form .form_field span::first-letter{
   margin-bottom: 10px;
 }
 
-.form_submit:hover{
+.form_submit:hover {
   color: #43bcc3;
   background-color: black;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-aside h3{
+aside h3 {
   color: #170f4f;
   font-size: 25px;
   font-weight: 600;
@@ -292,45 +406,45 @@ aside h3{
   margin-bottom: 40px;
 }
 
-aside ul{
+aside ul {
   list-style: none;
 }
 
-aside ul li{
+aside ul li {
   border-bottom: 1px solid #ccc;
 }
 
-aside ul li:last-child{
+aside ul li:last-child {
   border: none;
 }
 
-aside ul li img{
+aside ul li img {
   display: inline-block;
   margin-top: 20px;
 }
 
-aside ul li h4{
+aside ul li h4 {
   color: #170f4f;
   font-weight: 600;
   margin: 10px 0;
 }
 
-aside ul li h4::first-letter{
+aside ul li h4::first-letter {
   text-transform: uppercase;
 }
 
-aside ul li p{
+aside ul li p {
   color: #170f4f;
   font-size: 12px;
   margin-bottom: 10px;
 }
 
-aside ul li p::first-letter{
+aside ul li p::first-letter {
   text-transform: uppercase;
   line-height: 1.5;
 }
 
-aside li a{
+aside li a {
   display: inline-block;
   text-decoration: none;
   color: #170f4f;
@@ -341,67 +455,67 @@ aside li a{
   margin: 26px 0;
 }
 
-aside li a::first-letter{
+aside li a::first-letter {
   text-transform: uppercase;
 }
 
-aside li a:hover{
+aside li a:hover {
   color: #43bcc3;
   background-color: black;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 /* Contact us section starts here */
 
-.contact_us{
+.contact_us {
   background-color: #e7e6ed;
   padding: 70px 0 140px 0;
 }
 
-.contact_us ul{
+.contact_us ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.contact_us ul li{
+.contact_us ul li {
   flex-basis: 30%;
 }
 
-.contact_us ul li h2{
+.contact_us ul li h2 {
   color: #170f4f;
   font-size: 25px;
   font-weight: 600;
   line-height: 1.5;
 }
 
-.contact_us ul li p{
+.contact_us ul li p {
   color: #170f4f;
   line-height: 1.5;
   font-size: 15px;
   margin-top: 10px;
 }
 
-.contact_us ul li p::first-letter{
+.contact_us ul li p::first-letter {
   text-transform: uppercase;
 }
 
-.contact_us ul li h2::first-letter{
+.contact_us ul li h2::first-letter {
   text-transform: uppercase;
 }
 
-.contact_us ul li h4{
+.contact_us ul li h4 {
   color: #170f4f;
   font-weight: 600;
   font-size: 19px;
 }
 
-.contact_us ul li h4::first-letter{
+.contact_us ul li h4::first-letter {
   text-transform: uppercase;
 }
 
-.contact_us ul li span{
+.contact_us ul li span {
   color: #170f4f;
   display: block;
   margin: 10px 0;
@@ -416,22 +530,21 @@ aside li a:hover{
 
 /* Footer section starts here. */
 
-footer{
+footer {
   background-color: #170f4f;
 }
 
-
-.footer_top{
+.footer_top {
   display: flex;
   justify-content: space-between;
   padding: 70px 0 140px 0;
 }
 
-.footer_top ul{
+.footer_top ul {
   list-style: none;
 }
 
-.footer_top ul li:first-child{
+.footer_top ul li:first-child {
   color: #43bcc3;
   font-weight: 600;
   text-transform: capitalize;
@@ -439,7 +552,7 @@ footer{
   margin-bottom: 30px;
 }
 
-.footer_top ul li a{
+.footer_top ul li a {
   text-decoration: none;
   color: #fff;
   text-transform: capitalize;
@@ -448,12 +561,12 @@ footer{
   display: inline-block;
 }
 
-.footer_top ul li a:hover{
+.footer_top ul li a:hover {
   color: gray;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.footer_bottom ul{
+.footer_bottom ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -462,13 +575,14 @@ footer{
   border-bottom: 1px solid #ccc;
 }
 
-.footer_bottom h2{
+.footer_bottom h2 {
   text-transform: uppercase;
   color: #fff;
   font-size: 22px;
 }
 
-.footer_bottom h2 span,.footer_bottom li h4{
+.footer_bottom h2 span,
+.footer_bottom li h4 {
   color: #43bcc3;
   font-size: 12px;
   display: block;
@@ -477,36 +591,49 @@ footer{
   margin-bottom: 5px;
 }
 
-.footer_bottom li h4{
+.footer_bottom li h4 {
   margin-bottom: 15px;
 }
 
-.footer_bottom ul li:nth-child(2) a{
+.footer_bottom ul li:nth-child(2) a {
   color: transparent;
   text-decoration: none;
 }
 
-.facebook::before{
-  font-family: "Font Awesome 5 Brands"; font-weight: 900; content: '\f39e'; color: #fff;
+.facebook::before {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 900;
+  content: '\f39e';
+  color: #fff;
 }
 
-.twitter::before{
-  font-family: "Font Awesome 5 Brands"; font-weight: 900; content: "\f099"; color: #fff;
+.twitter::before {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 900;
+  content: '\f099';
+  color: #fff;
 }
 
-.insta::before{
-  font-family: "Font Awesome 5 Brands"; font-weight: 900; content: "\f16d"; color: #fff;
+.insta::before {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 900;
+  content: '\f16d';
+  color: #fff;
 }
 
-.linked_in::before{
-  font-family: "Font Awesome 5 Brands"; font-weight: 900; content: "\f0e1"; color: #fff;
+.linked_in::before {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 900;
+  content: '\f0e1';
+  color: #fff;
 }
 
-.footer_bottom h2 span::first-letter,.footer_bottom li h4::first-letter{
+.footer_bottom h2 span::first-letter,
+.footer_bottom li h4::first-letter {
   text-transform: capitalize;
 }
 
-.terms_and_conditions{
+.terms_and_conditions {
   color: #fff;
   font-size: 12px;
   padding: 10px 0;
@@ -517,101 +644,117 @@ footer{
 
 /* Responsive stylesheet starts here. */
 
-@media only screen and (max-width: 1025px){
-/* Header section starts here. */
+@media only screen and (max-width: 1025px) {
 
-.wrapper{
-  width: auto;
-}
+  /* Hamburger icon starts here */
 
-header .wrapper{
-  justify-content: space-around;
-}
+  .hamburger{
+    display: block;
+  }
 
-header nav ul{
-  flex-direction: column;
-  align-items: flex-start;
-}
+  header nav{
+    display: none;
+  }
 
-header nav ul li:first-child ul{
-  padding: 0;
-  margin-left: -100px;
-  top: 5px;
-}
+  /* Hamburger icon ends here */
 
-header nav ul li,header nav ul li:nth-child(7){
-  margin: 10px 0 0 0;
-}
+  /* Header section starts here. */
 
-/* Header section ends here. */
-/* Main section starts here. */
+  .wrapper {
+    width: auto;
+  }
 
-.form{
-  flex-direction: column;
-  width: auto;
-  height: auto;
-  align-items: center;
-}
+  header .wrapper {
+    justify-content: space-around;
+  }
 
-.form h1,.form_title p,aside h3{
-  padding: 0 10px;
-}
+  header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.form_title{
-  margin-bottom: 80px;
-}
+  header nav ul li:first-child ul {
+    padding: 0;
+    margin-left: -100px;
+    top: 5px;
+  }
 
-.form_title p{
-  width: auto;
-}
+  header nav ul li,
+  header nav ul li:nth-child(7) {
+    margin: 10px 0 0 0;
+  }
 
-.form_title span{
-  margin: 0;
-}
+  /* Header section ends here. */
+  /* Main section starts here. */
 
-.form_data{
-  width: auto;
-}
+  .form {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    align-items: center;
+  }
 
-.form aside{
-  align-self: auto;
-}
+  .form h1,
+  .form_title p,
+  aside h3 {
+    padding: 0 10px;
+  }
 
-aside ul{
-  padding: 0 30px;
-}
+  .form_title {
+    margin-bottom: 80px;
+  }
 
-.contact_us{
-  padding: 70px 10px 140px 10px;
-}
+  .form_title p {
+    width: auto;
+  }
 
-.contact_us ul{
-  flex-direction: column;
-  align-items: stretch;
-}
+  .form_title span {
+    margin: 0;
+  }
 
-.contact_us ul li{
-  margin-top: 30px;
-}
+  .form_data {
+    width: auto;
+  }
 
-/* Main section ends here. */
-/* Footer section starts here. */
+  .form aside {
+    align-self: auto;
+  }
 
-.footer_top{
-  flex-direction: column;
-  padding: 70px 0 140px 30px;
-}
+  aside ul {
+    padding: 0 30px;
+  }
 
-.footer_bottom ul{
-  padding: 30px 0 30px 10px;
-  flex-direction: column;
-}
+  .contact_us {
+    padding: 70px 10px 140px 10px;
+  }
 
-.footer_bottom ul li:nth-child(2){
-  margin-top: 30px;
-}
+  .contact_us ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-/* Footer section ends here. */
+  .contact_us ul li {
+    margin-top: 30px;
+  }
+
+  /* Main section ends here. */
+  /* Footer section starts here. */
+
+  .footer_top {
+    flex-direction: column;
+    padding: 70px 0 140px 30px;
+  }
+
+  .footer_bottom ul {
+    padding: 30px 0 30px 10px;
+    flex-direction: column;
+  }
+
+  .footer_bottom ul li:nth-child(2) {
+    margin-top: 30px;
+  }
+
+  /* Footer section ends here. */
 }
 
 /* Responsive stylesheet ends here. */

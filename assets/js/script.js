@@ -4,14 +4,18 @@ var lastnamev = document.getElementById('last_name');
 var statev = document.getElementById('state');
 var yourmassagev = document.getElementById('your_massage');
 var checkbox = document.getElementById('form_checkbox');
+var hamburger = document.getElementById('hamburger');
+var nav_menu = document.getElementById('nav_menu');
 var checkboxchecked = 0; // If checkbox is checked then this variable value is set to 1 or otherwise 0.
 var allinputchecked = 0; // If all inputs are valid then this variable value is set to 1 or otherwise 0.
+var hamburgerclicked = 1; // This variable confirms if the hamburger is clicked or not.
 
 checkbox.addEventListener('click', checkterms); // This checking if checkbox is checked or not
 form.addEventListener('submit', validatenull); // This function check every field is null or not if not then submit form.
 firstnamev.addEventListener('blur', validateinput); // This function validate input every time blur event occur.
 lastnamev.addEventListener('blur', validateinput);
 statev.addEventListener('blur', validateinput);
+hamburger.addEventListener('click', menushowhide); // This function hide and show menu depends upon size of screen.
 
 function checkterms() {
   if (checkbox.checked) {
@@ -61,5 +65,16 @@ function validateinput(e) {
     input.classList.add('form_error');
     input.parentNode.classList.add('form_error_msg');
     allinputchecked = 0;
+  }
+}
+
+function menushowhide() {
+  if (hamburgerclicked == 1) {
+    nav_menu.style.display = 'block';
+    hamburgerclicked = 0;
+    var winwidth = window.innerWidth;
+    console.log(winwidth);
+  } else {
+    nav_menu.style.display = 'none';
   }
 }
