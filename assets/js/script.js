@@ -38,6 +38,7 @@ function validatenull(e) {
     e.preventDefault();
 
     form.classList.add('null_field_msg');
+    form.classList.remove('success_field_msg');
   } else {
     form.classList.remove('null_field_msg');
     form.classList.add('success_field_msg');
