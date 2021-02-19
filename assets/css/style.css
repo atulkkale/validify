@@ -215,10 +215,45 @@ header nav ul li:nth-child(7){
 
 .form_title form input{
   margin-top: 15px;
+  padding-left: 10px;
 }
 
 ::placeholder{
   color: #170f4f;
+}
+
+.form_error{
+  outline: 1px solid rgb(226, 76, 76);
+  border: none;
+  box-shadow: inset 1px 1px 10px rgb(255, 169, 169);
+}
+
+/* form .form_field span{
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgb(226, 76, 76);
+} */
+
+form .form_field span::first-letter{
+  text-transform: uppercase;
+}
+
+.form_error_msg::after{
+  content: "Please enter proper details!";
+  color: rgb(226, 76, 76);
+  font-size: 12px;
+}
+
+.null_field_msg::after{
+  content: "Please fill all the fields and accept terms and conditions.";
+  font-weight: 600;
+  color:  rgb(226, 76, 76);
+}
+
+.success_field_msg::after{
+  content: "Form is send successfully!";
+  font-weight: 600;
+  color:  #170f4f;
 }
 
 .checkbox{
@@ -240,6 +275,7 @@ header nav ul li:nth-child(7){
   border: none;
   padding: 10px 17px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .form_submit:hover{
@@ -498,7 +534,8 @@ header nav ul{
 }
 
 header nav ul li:first-child ul{
-  padding: 0 0 0 125px;
+  padding: 0;
+  margin-left: -100px;
   top: 5px;
 }
 
