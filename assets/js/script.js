@@ -70,11 +70,12 @@ function validateinput(e) {
 
 function menushowhide() {
   if (hamburgerclicked == 1) {
-    nav_menu.style.display = 'block';
+    nav_menu.classList.remove("hidemenu");
+    nav_menu.classList.add("showmenu");
     hamburgerclicked = 0;
-    var winwidth = window.innerWidth;
-    console.log(winwidth);
   } else {
-    nav_menu.style.display = 'none';
+    nav_menu.classList.remove("showmenu");
+    nav_menu.classList.add("hidemenu");
+    hamburgerclicked = 1;
   }
 }
