@@ -197,9 +197,25 @@ body {
   display: none;
 }
 
+.close_menu_btn {
+  color: #170f4f;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  position: fixed;
+  z-index: 5;
+  right: 30px;
+  top: 30px;
+  display: none;
+}
+
 /* Hamburger icon ends here */
 
 /* Header section starts here. */
+
+.container {
+  overflow: hidden;
+}
 
 header .wrapper {
   display: flex;
@@ -342,6 +358,12 @@ header nav ul li:nth-child(7) {
   box-shadow: inset 1px 1px 10px rgb(255, 169, 169);
 }
 
+.form_success {
+  outline: 1px solid green;
+  border: none;
+  box-shadow: inset 1px 1px 11px rgb(91, 216, 91);
+}
+
 /* form .form_field span{
   font-size: 12px;
   margin-top: 5px;
@@ -352,14 +374,41 @@ form .form_field span::first-letter {
   text-transform: uppercase;
 }
 
-.form_error_msg::after {
-  content: 'Please enter proper details!';
+.form_hasno_err::after{
+  content: attr(data-forminput-name) " can not include any number, spaces and any special characters!";
+  color: rgb(226, 76, 76);
+  font-size: 12px;
+}
+
+.form_charlen_err::after{
+  content: attr(data-forminput-name) " must be 2 to 15 characters long!";
+  color: rgb(226, 76, 76);
+  font-size: 12px;
+}
+
+.form_field_valid::after{
+  content: "Valid.";
+  color: green;
+  font-size: 12px;
+}
+
+.field_required::after{
+  content: attr(data-forminput-name) " field is required!";
   color: rgb(226, 76, 76);
   font-size: 12px;
 }
 
 .null_field_msg::after {
-  content: 'Please fill all the fields and accept terms and conditions.';
+  content: 'Please fill all the fields! and make them valid!';
+  font-weight: 600;
+  color: rgb(226, 76, 76);
+}
+
+.modal_terms_error::after {
+  content: 'Please accept terms and conditions to proceed.';
+  position: absolute;
+  bottom: 0;
+  text-align: center;
   font-weight: 600;
   color: rgb(226, 76, 76);
 }
@@ -464,6 +513,91 @@ aside li a:hover {
   background-color: black;
   transition: 0.5s;
 }
+
+/* Terms and conditions modal style starts here. */
+
+.modal {
+  position: fixed;
+  z-index: 3;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: #3d414abf;
+  display: none;
+}
+
+.modal_box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 1px;
+  padding: 20px 20px 50px 20px;
+}
+
+.modal_close_btn {
+  color: #170f4f;
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 5px 5px 5px 0;
+}
+
+.modal_icon {
+  text-align: center;
+}
+
+.modal_terms_msg span {
+  font-size: 18px;
+  color: #170f4f;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.modal_terms_msg span::first-letter {
+  text-transform: uppercase;
+}
+
+.modal_terms_msg input {
+  display: inline-block;
+}
+
+.modal_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.modal_btn li {
+  padding: 7px 15px;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.modal_btn li:first-child {
+  background-color: #170f4f;
+  margin-right: 2px;
+}
+
+.modal_btn li:nth-child(2) {
+  background-color: #43bcc3;
+  margin-left: 2px;
+}
+
+.show_desktop_item{
+  display: block;
+}
+
+.hide_desktop_item{
+  display: none;
+}
+
+/* Terms and conditions modal style ends here. */
 
 /* Contact us section starts here */
 
@@ -571,8 +705,27 @@ footer {
   justify-content: space-between;
   list-style: none;
   padding: 30px 0;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.footer_bottom ul::before {
+  content: '';
+  border-top: 1px solid #423984;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer_bottom ul::after {
+  content: '';
+  border-top: 1px solid #423984;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .footer_bottom h2 {
@@ -651,10 +804,6 @@ footer {
     display: block;
   }
 
-  header nav {
-    display: none;
-  }
-
   .showmenu {
     display: block;
   }
@@ -675,9 +824,23 @@ footer {
     justify-content: space-around;
   }
 
+  header nav {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #44fde3f7;
+    background-size: cover;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
   header nav ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    margin-top: 40px;
   }
 
   header nav ul li:first-child ul {
@@ -745,6 +908,28 @@ footer {
   }
 
   /* Main section ends here. */
+
+  /* Terms and conditions modal style starts here. */
+
+  .modal_box {
+    width: 75vw;
+  }
+
+  .modal_btn {
+    flex-direction: column;
+  }
+
+  .modal_terms_msg input {
+    margin: 0 auto;
+    width: 20px;
+  }
+
+  .modal_btn li:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  /* Terms and conditions modal style ends here. */
+
   /* Footer section starts here. */
 
   .footer_top {
@@ -752,7 +937,7 @@ footer {
     padding: 70px 0 140px 30px;
   }
 
-  .footer_top ul li:first-child{
+  .footer_top ul li:first-child {
     margin-top: 30px;
   }
 
