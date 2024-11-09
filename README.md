@@ -25,13 +25,13 @@ The objective of this project was to implement form validation using JavaScript.
 To view the project, clone this repository and open `index.html` in a browser.
 
 ```bash
-git clone https://github.com/atulkkale/boltaccess.git
-cd boltaccess
+git clone https://github.com/atulkkale/validify.git
+cd validify
 open index.html
 ```
 ## Project Link
 
-You can view the live version of the project [here](https://atulkkale.github.io/boltaccess/).
+You can view the live version of the project [here](https://atulkkale.github.io/validify/).
 
 ## Screenshots
 
