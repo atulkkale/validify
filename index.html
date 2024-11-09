@@ -1,47 +1,317 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>bolt access</title>
 
-<head>
- 
-  <meta charset="utf-8">
+    <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
+    <meta
+      name="description"
+      lang="en"
+      content="before submitting data to the server, it is important to ensure all required form controls are filled out, in the correct format. this is called client-side form validation, and helps ensure data submitted matches the requirements set forth in the various form controls. this article leads you through basic concepts and examples of client-side form validation."
+    />
 
-  <title>Client | Page Title</title>
-  
-  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-  <meta name="description" lang="en" content="">
-  
-  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-  <meta name="keywords" lang="en" content="">
-  
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
-       so how much the device is able to fit on the screen is what's shown initially. 
-       Remove comments from this tag, when you want to apply media queries to the website. -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-  
-  <!-- To adhear no-cache for Chrome -->
-  <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-store, no-cache" />
-  <meta http-equiv="Expires" content="0" />
+    <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
+    <meta
+      name="keywords"
+      lang="en"
+      content="bolt access, bolt, access, form, bolt form"
+    />
 
-  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link rel="shortcut icon" href="favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="css/style.css" >
+    <!-- To adhear no-cache for Chrome -->
+    <meta
+      http-equiv="cache-control"
+      content="no-store, no-cache, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-store, no-cache" />
+    <meta http-equiv="Expires" content="0" />
 
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
-  <!--[if lt IE 9]>  
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
-  <![endif]-->
+    <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="favicon.ico" />
 
-</head>
+    <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+    <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/all.min.css"> -->
+  </head>
 
-<body>
+  <body>
+    <div class="container">
+      <!-- Header section starts here. -->
+      <header>
+        <div class="wrapper">
+          <h1>
+            <a href="index.html"
+              ><img src="assets/images/icon.png" alt="bolt access"
+            /></a>
+          </h1>
 
-<script src="js/vendors/jquery-1.8.3.min.js"></script>
-<script src="js/script.js"></script>
-</body>
+          <!-- hamburger and close icon starts here -->
+
+          <div class="hamburger" id="hamburger">h</div>
+          <div class="close_menu_btn" id="close_menu_btn">X</div>
+
+          <!-- hamburger and close icon ends here -->
+
+          <nav id="nav_menu">
+            <ul>
+              <li class="dropdown">
+                <a href="#FIXME" title="Our platform">our platform</a>
+                <ul>
+                  <li><a href="#FIXME" title="Dropdown1">dropdown1</a></li>
+                  <li><a href="#FIXME" title="Dropdown2">dropdown2</a></li>
+                </ul>
+              </li>
+              <li><a href="#FIXME" title="Carriers">carriers</a></li>
+              <li><a href="#FIXME" title="Contact us">contact us</a></li>
+              <li><a href="#FIXME" title="Newsroom">newsroom</a></li>
+              <li><a href="#FIXME" title="About us">about us</a></li>
+              <li>
+                <a href="#FIXME" title="Resource center">resource center</a>
+              </li>
+              <li><a href="#FIXME" title="Sign up">sign up</a></li>
+              <li><a href="#FIXME" title="Log in">log in</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- Header section ends here. -->
+
+      <!-- Main section starts here. -->
+      <main>
+        <!-- Form section starts here. -->
+        <section class="form">
+          <div class="wrapper form_title">
+            <h1>send us a message</h1>
+            <p>
+              pretium, turpis massa elementum lorem convallis suspendisse
+              vestibulum vestibulum. Ultrices quisque ut at tortor. Tincidunt
+              nisl.
+            </p>
+
+            <form action="#FIXME" id="form" name="form" method="GET">
+              <div class="form_field" id="first_field">
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  placeholder="* First Name"
+                  class="form_data"
+                />
+              </div>
+              <div class="form_field" id="second_field">
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  placeholder="* Last Name"
+                  class="form_data"
+                />
+              </div>
+              <div class="form_field" id="third_field">
+                <input
+                  type="text"
+                  name="state"
+                  id="state"
+                  placeholder="* State"
+                  class="form_data"
+                />
+              </div>
+              <div class="form_field" id="fourth_field">
+                <input
+                  type="text"
+                  name="your_massage"
+                  id="your_massage"
+                  placeholder="Your message"
+                  class="form_data"
+                />
+              </div>
+
+              <input type="checkbox" id="form_checkbox" />
+              <span
+                >Yes, I accept the terms and conditions of bolttech privacy
+                policy.</span
+              >
+
+              <input type="submit" value="send" class="form_submit" />
+            </form>
+          </div>
+
+          <!-- Aside section starts here. -->
+          <aside>
+            <div class="wrapper">
+              <h3>why blot aceess</h3>
+
+              <ul>
+                <li>
+                  <figure>
+                    <img src="assets/images/clock.png" alt="Clock" />
+                  </figure>
+                  <h4>top rated markets</h4>
+                  <p>
+                    get access to out top rated carriers for home, auto and
+                    small commercial.
+                  </p>
+                </li>
+                <li>
+                  <figure>
+                    <img src="assets/images/clock.png" alt="Clock" />
+                  </figure>
+                  <h4>designed for you</h4>
+                  <p>
+                    a real time comparative rater bundled into your agent portal
+                    where you can write, track and manage all of your new and
+                    existing business.
+                  </p>
+                </li>
+                <li>
+                  <figure>
+                    <img src="assets/images/clock.png" alt="Clock" />
+                  </figure>
+                  <h4>agent benefits</h4>
+                  <p>
+                    there are never any volume requirements and you own 100% of
+                    your book of business.
+                  </p>
+                </li>
+                <li>
+                  <a href="#FIXME" title="Find out more">find out more</a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <!-- Aside section ends here. -->
+        </section>
+        <!-- Form section ends here. -->
+
+        <!-- Terms and conditions modal code starts here. -->
+
+        <section class="modal" id="modal">
+          <div class="modal_box">
+            <span class="modal_close_btn" id="modal_close_btn">X</span>
+            <figure class="modal_icon">
+              <img src="assets/images/icon.png" alt="Bolt access" />
+            </figure>
+            <figcaption class="modal_terms_msg">
+              <input type="checkbox" id="modal_checkbox" />
+              <span
+                >yes, I accept the terms and conditions of bolttech privacy
+                policy.</span
+              >
+            </figcaption>
+            <ul class="modal_btn">
+              <li id="modal_cancel_btn">cancel</li>
+              <li id="modal_agree_btn">agree and continue</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Terms and conditions modal code ends here. -->
+
+        <!-- Contact us section starts here. -->
+        <section class="contact_us">
+          <div class="wrapper">
+            <ul>
+              <li>
+                <h2>or get in touch with any queries</h2>
+                <p>
+                  looking for support with a personal touch? Feel free to give
+                  us a call or start a chat online.
+                </p>
+              </li>
+
+              <li>
+                <h4>call us</h4>
+                <span>1-800-272-7550</span>
+              </li>
+
+              <li>
+                <h4>email us</h4>
+                <span>bop@superioraccess.com</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Contact us section ends here. -->
+      </main>
+      <!-- Main section ends here -->
+
+      <!-- Footer section starts here. -->
+      <footer>
+        <div class="wrapper">
+          <div class="footer_top">
+            <ul>
+              <li>legal information</li>
+              <li><a href="#FIXME" title="Disclaimer">disclaimer</a></li>
+              <li>
+                <a href="#FIXME" title="Privacy policy">privacy policy</a>
+              </li>
+              <li><a href="#FIXME" title="Cookie policy">cookie policy</a></li>
+            </ul>
+
+            <ul>
+              <li>explore</li>
+              <li>
+                <a href="#FIXME" title="Resource center">resource center</a>
+              </li>
+              <li><a href="#FIXME" title="Newsroom">newsroom</a></li>
+              <li><a href="#FIXME" title="About us">about us</a></li>
+              <li><a href="#FIXME" title="Careers">careers</a></li>
+            </ul>
+
+            <ul>
+              <li>our platform</li>
+              <li><a href="#FIXME" title="Overview">overview</a></li>
+              <li><a href="#FIXME" title="Our plans">our plans</a></li>
+              <li>
+                <a href="#FIXME" title="Insurance lines">insurance lines</a>
+              </li>
+              <li><a href="#FIXME" title="Carriers">carriers</a></li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="index.html" title="bolt access">
+                  <figure>
+                    <img
+                      src="assets/images/footer_icon.png"
+                      alt="bolt access"
+                    /></figure
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer_bottom">
+            <ul>
+              <li>
+                <h2><span>we are</span> the power of connection</h2>
+              </li>
+              <li>
+                <h4>follow us</h4>
+                <a href="#FIXME" class="fa twitter" title="Twitter">twit</a>
+                <a href="#FIXME" class="fa facebook" title="Facebook">facb</a>
+                <a href="#FIXME" class="fa insta" title="Instagram">inst</a>
+                <a href="#FIXME" class="fa linked_in" title="Linked in">link</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="terms_and_conditions">
+            <span>bolttech &copy; 2020 all rights reserved</span>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer section ends here. -->
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
